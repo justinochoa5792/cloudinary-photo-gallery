@@ -4,8 +4,52 @@ img {
   object-fit: cover;
 }
 
-.img-grid {
+.image-grid {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer button {
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 18px;
+  margin: 3rem 0 3rem 0;
+}
+
+form {
+  margin: 1rem 0 1rem 0;
+  display: grid;
+  gap: 20px;
+}
+
+form input {
+  padding: 14px;
+  border: 3px solid rgb(225, 225, 225);
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+form button {
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 16px;
+}
+
+form button[type="button"] {
+  background-color: rgb(254, 80, 80);
+}
+
+@media only screen and (min-width: 960px) {
+  form {
+    grid-template-columns: 5fr 1fr 1fr;
+  }
 }
